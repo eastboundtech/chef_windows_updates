@@ -1,5 +1,5 @@
 #
-# Cookbook:: windows_update
+# Cookbook:: windows_updates
 # Recipe:: default
 #
 # Copyright:: 2018, Nghiem Ba Hieu
@@ -16,13 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-update_command = 'chef-client -o windows_update::update'
+update_command = 'chef-client -o windows_updates::update'
 
 windows_task 'ChefInstallUpdate' do
   command update_command
-  frequency node['windows_update']['frequency']
-  frequency_modifier node['windows_update']['frequency_modifier']
-  day node['windows_update']['day']
-  start_time node['windows_update']['start_time']
+  frequency node['windows_updates']['frequency']
+  frequency_modifier node['windows_updates']['frequency_modifier']
+  day node['windows_updates']['day']
+  start_time node['windows_updates']['start_time']
   action :create
 end

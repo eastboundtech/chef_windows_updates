@@ -1,5 +1,5 @@
 #
-# Cookbook:: windows_update
+# Cookbook:: windows_updates
 # Recipe:: update
 #
 # Copyright:: 2018, Nghiem Ba Hieu

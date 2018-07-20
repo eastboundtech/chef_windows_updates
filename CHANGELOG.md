@@ -1,11 +1,9 @@
-# windows_update CHANGELOG
+# windows_updates CHANGELOG
 
-This file is used to list changes made in each version of the windows_update cookbook.
+This file is used to list changes made in each version of the windows_updates cookbook.
 
 # 0.1.0
 
 Initial release.
 
-- change 0
-- change 1
-
+- Create schedule task to run Windows update
