@@ -15,3 +15,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+update_command = 'chef-client -o windows_update::update'
+
+windows_task 'ChefInstallUpdate' do
+  command update_command
+  frequency node['windows_update']['frequency']
+  frequency_modifier node['windows_update']['frequency_modifier']
+  day node['windows_update']['day']
+  start_time node['windows_update']['start_time']
+  action :create
+end

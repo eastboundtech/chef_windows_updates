@@ -1,4 +1,3 @@
 # windows_update
 
-TODO: Enter the cookbook description here.
-
+This cookbook set up an Schedule task for Windows Update
